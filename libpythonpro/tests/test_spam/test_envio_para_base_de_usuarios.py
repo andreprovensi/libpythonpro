@@ -1,7 +1,9 @@
-from libpythonpro.spam.enviador_de_email import Enviador
+from unittest.mock import Mock
+
+import pytest
+
 from libpythonpro.spam.main import EnviadorDeSpam
 from libpythonpro.spam.modelos import Usuario
-from unittest.mock import Mock
 
 
 @pytest.mark.parametrize('usuarios', [[Usuario(nome='Andre', email='andreprovensi@gmail.com'),
