@@ -15,4 +15,4 @@ def buscar_avatar(usuario: str):
 
 if __name__ == "__main__":
 
-    print(buscar_avatar('andreprovensi'))
+    print(buscar_avatar('renzon'))
