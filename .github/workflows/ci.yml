@@ -19,7 +19,9 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: |
-        pip install -r requirements-dev.txt
+        #pip install -r requirements-dev.txt
+        pip install pipenv
+        pipenv sync -dev
     - name: Lint with flake8
       run: |
         ## stop the build if there are Python syntax errors or undefined names
@@ -29,5 +31,9 @@ jobs:
         flake8
     - name: Teste de código com pytest
       run: |
-        pytest --cov=libpythonpro
+        #pytest --cov=libpythonpro
+        pipenv run pytest --cov=libpythonpro
+        
+        
+
 
